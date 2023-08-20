@@ -1,0 +1,132 @@
+.container {
+  margin-top: 9rem;
+}
+
+.possibilities {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 800;
+  color: black;
+}
+
+.button_small {
+  position: absolute;
+  left: 85%;
+  bottom: 85%;
+  text-transform: uppercase;
+  font-weight: bolder;
+  background-color: rgb(108, 18, 234);
+  border: none;
+  border-radius: 30px;
+}
+
+.button_small:hover {
+  background-color: rgb(108, 18, 234);
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 2fr, 1fr;
+  grid-template-areas:
+    "wires laptop productivity"
+    "games free news";
+  margin: 2rem;
+}
+
+.logo {
+  position: absolute;
+  top: 5%;
+  left: 4%;
+}
+
+h2 {
+  font-weight: bolder;
+}
+
+.wires {
+  grid-area: wires;
+}
+
+.laptop {
+  grid-area: laptop;
+}
+
+.productivity {
+  grid-area: productivity;
+}
+
+.games {
+  grid-area: games;
+}
+
+.free {
+  grid-area: free;
+}
+
+.news {
+  color: white;
+  background-color: rgb(239, 97, 100);
+  grid-area: news;
+  padding-left: 1rem;
+}
+
+.button_news {
+  font-size: 0.5em;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bolder;
+  background-color: rgb(108, 18, 234);
+  border: none;
+  border-radius: 30px;
+  margin-top: 1rem;
+}
+
+.button_small:hover {
+  background-color: rgb(108, 18, 234);
+}
+
+.nav {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(170, 63, 241);
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+  margin-left: 2rem;
+}
+
+.nav__menu {
+  list-style: none;
+  padding-left: 0;
+}
+
+.nav__point {
+  display: inline-block;
+  margin: 0.5rem;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link:hover {
+  color: blueviolet;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr, 1fr;
+    grid-template-areas:
+      "wires"
+      "laptop"
+      "productivity"
+      "games"
+      "free"
+      "news";
+  }
+
+  .nav__point {
+    display: block;
+  }
+}
